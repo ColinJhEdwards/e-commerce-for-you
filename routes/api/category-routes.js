@@ -77,7 +77,7 @@ router.delete("/:id", (req, res) => {
   })
     .then((categoryData) => {
       if (!categoryData) {
-        res.status(404).json({ message: "No Category found with thit ID." });
+        res.status(404).json({ message: "No Category found with this ID." });
         return;
       }
       res.json(categoryData);
